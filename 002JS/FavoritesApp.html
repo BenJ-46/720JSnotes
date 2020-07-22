@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="Myfaves"></div>
+
+
+
+    <script>
+    let movie = '9'
+    let song = 'Out Of My mind'
+    let game = 'Ori and the Blind Forest'
+    let food = 'Ceviche'
+    let array = [movie, song, game, food]
+    function startQA () {
+      let userMovie = prompt('What is your favorite movie?')
+      if (userMovie === movie) {
+        alert("Hey, that's my favorite too!")
+      }
+      let userSong = prompt('What is your favorite song?')
+      if (userSong === song) {
+        alert("Hey, that's my favorite too!")
+      }
+      let userGame = prompt('What is your favorite game?')
+      if (userGame === game) {
+        alert("Hey, that's my favorite too!")
+      }
+      let userFood = prompt('What is your favorite food?')
+      if (userFood === food) {
+        alert("Hey, that's my favorite too!")
+      }
+      
+      
+    //  //document.getElementById(`uarray`)innerHTML= 
+    //   let uarray = {
+    //     userMovie: userMovie,
+    //     userSong: userSong,
+    //     userGame: userGame,
+    //     userMovie: userMovie,
+    //   }
+    //   console.log(uarray)
+     
+    //   console.log(`
+    //   My Favorites
+    //   ------------
+    //   Movie: ${movie}
+    //   Song: ${song}
+    //   Game: ${game}
+    //   Food: ${food} 
+    //   `)
+    // }
+    document.getElementById(`MyFavs`).innerHTML = `
+    <p> My Favorite Movie: ${movie} </P>
+    <p> My Favorite Song: ${song} </p>
+    <p> My favorite game: ${game} </p>
+    <p> My favorite food: ${food} </p>
+    `
+    
+
+    </script>
+</body>
+</html>
